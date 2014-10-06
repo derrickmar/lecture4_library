@@ -1,0 +1,6 @@
+Our edit file
+<%= form_for @book, url: {action: "update"} do |f| %>
+  Title: <%= f.text_field :title %>
+  Description: <%= f.text_area :description %>
+  <%= f.submit "Update" %>
+<% end %>

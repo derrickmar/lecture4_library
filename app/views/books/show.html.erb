@@ -1,0 +1,6 @@
+Our show view 
+Title: <%= @book.title %>
+</br>
+Description: <%= @book.description %>
+<%= link_to 'edit this book', edit_book_path(@book) %>
+<%= link_to 'delete this book', @book, method: :delete %>
